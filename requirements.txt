@@ -1,5 +1,6 @@
 pandas
 numpy
-matplotlib
+matplotlib==3.7.1  
+plotly==5.18.0  
 seaborn
 
