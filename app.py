@@ -206,14 +206,9 @@ if st.session_state.show_report_form:
         st.plotly_chart(fig2)
 
 # bargraph
-        # fig3 = px.bar(report_data, x='date', y='amount', color='category', title='Amount vs Date (Stacked by Category)', barmode='stack')  
-        # st.plotly_chart(fig3)
-        fig3 = px.bar(report_data, x='date', y='amount', color='category', title='Amount vs Date (Stacked by Category)', barmode='stack')
-
-# Update layout to restrict x-axis range
-        fig3.update_layout(xaxis=dict(range=[0, None]))
-
+        fig3 = px.bar(report_data, x='date', y='amount', color='category', title='Amount vs Date (Stacked by Category)', barmode='stack')  
         st.plotly_chart(fig3)
+
 
 
         
